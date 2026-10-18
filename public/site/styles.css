@@ -68,7 +68,7 @@ h3 { font-size: 1.3rem; margin-bottom: .4rem; }
 .icon-btn.wa svg { fill: var(--wa); }
 .icon-btn.mail { color: var(--heading); }
 a:hover > .icon-btn, a.icon-btn:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-.is-disabled { opacity: .45; cursor: not-allowed !important; pointer-events: auto; }
+.is-disabled { opacity: .6; cursor: not-allowed !important; pointer-events: auto; }
 .is-disabled:hover > .icon-btn, .icon-btn.is-disabled:hover { transform: none; }
 
 /* Buttons */
