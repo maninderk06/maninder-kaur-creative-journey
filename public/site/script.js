@@ -25,7 +25,7 @@ document.querySelectorAll(".js-mail").forEach((a) => {
     a.title = "Email coming soon";
   }
 });
-document.querySelectorAll(".js-mail-label").forEach((s) => (s.textContent = emailReady ? "Email" : "Email (coming soon)"));
+document.querySelectorAll(".js-mail-label").forEach((s) => (s.textContent = emailReady ? CONFIG.EMAIL : "Email Coming Soon"));
 
 // Year
 document.getElementById("year").textContent = new Date().getFullYear();
@@ -85,3 +85,18 @@ const revealObserver = new IntersectionObserver(
   { threshold: 0.12 }
 );
 document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
+
+// Theme toggle (saved in localStorage)
+const root = document.documentElement;
+const themeBtn = document.getElementById("themeToggle");
+const syncThemeBtn = () => {
+  const dark = root.getAttribute("data-theme") === "dark";
+  themeBtn.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+};
+syncThemeBtn();
+themeBtn.addEventListener("click", () => {
+  const dark = root.getAttribute("data-theme") !== "dark";
+  if (dark) root.setAttribute("data-theme", "dark"); else root.removeAttribute("data-theme");
+  try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
+  syncThemeBtn();
+});
