@@ -50,9 +50,15 @@ navLinks.querySelectorAll("a").forEach((a) =>
 // Scroll state: nav shadow + back to top
 const nav = document.getElementById("nav");
 const toTop = document.getElementById("toTop");
+let ticking = false;
 const onScroll = () => {
-  nav.classList.toggle("scrolled", window.scrollY > 20);
-  toTop.classList.toggle("show", window.scrollY > 500);
+  if (ticking) return;
+  ticking = true;
+  requestAnimationFrame(() => {
+    nav.classList.toggle("scrolled", window.scrollY > 20);
+    toTop.classList.toggle("show", window.scrollY > 500);
+    ticking = false;
+  });
 };
 window.addEventListener("scroll", onScroll, { passive: true });
 onScroll();

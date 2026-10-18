@@ -183,8 +183,10 @@ a:hover > .icon-btn, a.icon-btn:hover { transform: translateY(-3px); box-shadow:
 .to-top:hover { background: var(--lav-500); }
 
 /* Reveal */
-.reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s ease; }
-.reveal.visible { opacity: 1; transform: none; }
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s cubic-bezier(.22,.61,.36,1), transform .8s cubic-bezier(.22,.61,.36,1); will-change: opacity, transform; }
+.reveal.visible { opacity: 1; transform: none; will-change: auto; }
+.grid--3 .reveal:nth-child(2) { transition-delay: .1s; }
+.grid--3 .reveal:nth-child(3) { transition-delay: .2s; }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } .reveal { opacity: 1; transform: none; } html { scroll-behavior: auto; } }
 
 a:focus-visible, button:focus-visible { outline: 3px solid var(--lav-500); outline-offset: 3px; }
