@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maninder Kaur | BCA Student & Aspiring Web Designer</title>
+  <meta name="description" content="Portfolio of Maninder Kaur, BCA 3rd-year student at SN College and aspiring web designer skilled in HTML, CSS and JavaScript." />
+  <meta property="og:title" content="Maninder Kaur | Portfolio" />
+  <meta property="og:description" content="BCA Student | Aspiring Web Designer creating attractive, responsive websites." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Reusable SVG icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="igGrad" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0" stop-color="#feda75"/><stop offset=".3" stop-color="#fa7e1e"/>
+        <stop offset=".6" stop-color="#d62976"/><stop offset=".8" stop-color="#962fbf"/><stop offset="1" stop-color="#4f5bd5"/>
+      </linearGradient>
+    </defs>
+    <symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 4.7a5.1 5.1 0 1 0 0 10.2 5.1 5.1 0 0 0 0-10.2zm0 8.4a3.3 3.3 0 1 1 0-6.6 3.3 3.3 0 0 1 0 6.6zm5.3-9.8a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6A12 12 0 1 0 12 0z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></symbol>
+  </svg>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="logo" aria-label="Maninder Kaur, home">MK<span>.</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav__icons">
+        <a class="icon-btn ig js-ig" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile (opens in new tab)"><svg><use href="#i-ig"/></svg></a>
+        <a class="icon-btn mail js-mail" aria-label="Email Maninder"><svg><use href="#i-mail"/></svg></a>
+      </div>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <p class="eyebrow">Welcome to my portfolio</p>
+          <h1>Hi, I'm <span class="accent">Maninder Kaur</span></h1>
+          <p class="hero__role">BCA Student | Aspiring Web Designer</p>
+          <p class="hero__desc">I create attractive, user-friendly, and responsive websites while continuously improving my frontend development skills.</p>
+          <div class="hero__btns">
+            <a href="#projects" class="btn btn--primary">Explore My Work</a>
+            <a href="#contact" class="btn btn--ghost">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero__photo reveal">
+          <!-- Replace with: <img src="your-photo.jpg" alt="Maninder Kaur"> -->
+          <div class="photo" role="img" aria-label="Profile photo placeholder">
+            <span>MK</span>
+          </div>
+          <div class="blob" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow reveal">
+        <p class="eyebrow">About Me</p>
+        <h2>A little about me</h2>
+        <p class="lead">I am a BCA 3rd-year student at SN College with a strong interest in web designing and frontend development. I enjoy creating attractive, user-friendly websites and continuously learning new technologies.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--tint">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Technical Skills</p><h2>What I work with</h2></div>
+        <div class="grid grid--3">
+          <article class="card reveal"><div class="badge-ic">5</div><h3>HTML5</h3><p>Semantic, accessible page structure.</p></article>
+          <article class="card reveal"><div class="badge-ic">3</div><h3>CSS3</h3><p>Responsive layouts, styling and animations.</p></article>
+          <article class="card reveal"><div class="badge-ic">JS</div><h3>JavaScript</h3><p>Interactivity and dynamic behaviour.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Projects</p><h2>My work</h2></div>
+        <article class="card project reveal">
+          <span class="pill pill--progress">In Progress</span>
+          <h3>Personal Portfolio Website</h3>
+          <p>A responsive personal portfolio built with HTML, CSS and JavaScript to showcase my skills, education and journey.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section section--tint">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Education</p><h2>Academic background</h2></div>
+        <article class="card timeline reveal">
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p class="muted">3rd Year · SN College</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="certificates" class="section">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Certificates</p><h2>Certifications</h2></div>
+        <article class="card reveal">
+          <span class="pill">Pending</span>
+          <h3>Web Designing Internship Certificate</h3>
+          <p class="muted">Status: To Be Received After Internship Completion.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--dark">
+      <div class="container narrow center reveal">
+        <p class="eyebrow">Contact Me</p>
+        <h2>Let's connect</h2>
+        <p class="lead">Have a project in mind or want to connect? Feel free to reach out!</p>
+        <div class="contact-icons">
+          <a class="contact-item js-ig" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile (opens in new tab)">
+            <span class="icon-btn ig lg"><svg><use href="#i-ig"/></svg></span><span>Instagram</span>
+          </a>
+          <a class="contact-item js-mail" aria-label="Email Maninder">
+            <span class="icon-btn mail lg"><svg><use href="#i-mail"/></svg></span><span class="js-mail-label">Email</span>
+          </a>
+          <a class="contact-item js-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp (opens in new tab)">
+            <span class="icon-btn wa lg"><svg><use href="#i-wa"/></svg></span><span>Chat on WhatsApp</span>
+          </a>
+        </div>
+        <a class="btn btn--wa js-wa" target="_blank" rel="noopener noreferrer"><svg><use href="#i-wa"/></svg> Let's Talk on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="logo">Maninder Kaur</p>
+      <div class="nav__icons">
+        <a class="icon-btn ig js-ig" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile (opens in new tab)"><svg><use href="#i-ig"/></svg></a>
+        <a class="icon-btn mail js-mail" aria-label="Email Maninder"><svg><use href="#i-mail"/></svg></a>
+        <a class="icon-btn wa js-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp (opens in new tab)"><svg><use href="#i-wa"/></svg></a>
+      </div>
+      <p class="muted">&copy; <span id="year"></span> Maninder Kaur. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a class="wa-float js-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp (opens in new tab)"><svg><use href="#i-wa"/></svg></a>
+  <button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
