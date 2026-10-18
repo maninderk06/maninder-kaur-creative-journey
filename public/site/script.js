@@ -1,7 +1,7 @@
 // ===== CONFIGURATION — update contact details here =====
 const CONFIG = {
   // Add Maninder's real email here, e.g. "name@example.com". Leave empty to keep email disabled.
-  EMAIL: "",
+  EMAIL: "bhangalmaninder5@gmail.com",
   INSTAGRAM_URL: "https://www.instagram.com/bhangalmxninder/",
   WHATSAPP_URL: "https://wa.me/918968781134",
 };
